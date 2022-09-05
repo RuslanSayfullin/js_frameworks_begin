@@ -1,1 +1,4 @@
-ReactDOM.render(<h1>Привет</h1>, document.getElementById("app"))
+ReactDOM.render(React.createElement('input', {
+    placeholder: "Help text",
+    value:"50"
+}), document.getElementById("app"))
