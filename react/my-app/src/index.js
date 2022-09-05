@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import * as ReactDOMClient from 'react-dom/client';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -19,7 +20,7 @@ const elements = (<div><input placeholder={helpText}
     onMouseEnter={mouseOver}/>
     </div>)
 
-            
-const app = document.getElementById("app")
 
-ReactDOM.render(elements, app )
+ const app = ReactDOMClient.createRoot(document.getElementById("app"))
+
+ app.render(elements)
