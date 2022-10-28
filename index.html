@@ -7,15 +7,29 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" integrity="sha512-8Q6Y9XnTbOE+JNvjBQwJ2H8S+UV4uA6hiRykhdtIyDYZ2TprdNmWOUaKdGzOhyr4dCyk287OejbPvwl7lrfqrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" integrity="sha512-MOCpqoRoisCTwJ8vQQiciZv0qcpROCidek3GTFS6KTk2+y7munJIlKCVkFCYY+p3ErYFXCjmFjnfTTRSC1OHWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <title>React</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <div id="root"></div>
-    <script>
+    <script type="text/babel">
+        /* v1 */
+        // ReactDOM.render(
+        //         React.createElement("h1", {title: "React"}, "Hello from React"),
+        //         document.querySelector("#root")
+        //     );
+        // /* v2 */
         ReactDOM.render(
-                React.createElement("h1", {title: "React"}, "Hello from React"),
-                document.querySelector("#root")
-            );
+            <h1 title="Reaaact!">
+                Hello from <span className="red">React</span>
+            </h1>,
+            document.querySelector("#root")    
+        );        
     </script>
 </body>
 </html>
