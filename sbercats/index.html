@@ -9,7 +9,6 @@
     <script src="func.js"></script>
 </head>
 <body>
-    <!-- nav.dashboard>.btn*5^main.container>.card*6>.pic+.age+.rate+.name -->
     <nav class="dashboard">
         <div class="btn">+</div>
         <div class="btn" onclick="localStorage.removeItem('cats'); location.reload()">х</div>
@@ -18,18 +17,6 @@
         <div class="btn"></div>
     </nav>
     <main class="container">
-        <!-- <div class="card">
-            <div class="pic"></div>
-            <div class="age">10</div>
-            <div class="rate">
-                <span>☆</span>
-                <span>☆</span>
-                <span>☆</span>
-                <span>☆</span>
-                <span>☆</span>
-            </div>
-            <div class="name">Vasya</div>
-        </div> -->
     </main>
     <div class="popup-wrapper">
         <div class="popup" data-type="card">
@@ -40,17 +27,7 @@
             <div class="close">+</div>
             <div class="content">
                 <h2>Добавить кота</h2>
-                <!-- 
-                    id: 32,
-                    name: "Кот",
-                    img_link: "https://mindset-potential.com/wp-content/uploads/2022/05/0pexels-photo-1870376.jpeg.jpg&quot;,
-                    age: 1,
-                    rate: 10,
-                    description: "Просто потому что =)",
-                    favourite: true
-                 -->
                 <form id="add">
-                    <!-- .row*7>label[for=i$]+input#i$ -->
                     <div class="row">
                         <label for="i1">Имя котика</label>
                         <input type="text" id="i1" name="name" required></div>
@@ -95,7 +72,3 @@
 </body>
 </html>
 
-<!-- 
-    TODO: рейтинг в виде звездочек
-    popup
- -->

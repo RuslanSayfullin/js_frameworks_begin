@@ -29,18 +29,13 @@ const createCard = (data, parent, arr) => {
 
 const showPopup = (list, type, content) => {
     let el = list.filter(el => el.dataset.type === type)[0];
-    // switch (type) {
-    //     case "card": 
-    //     case "info":
-    //     case "form":
-    // }
     el.classList.add("active");
     el.parentElement.classList.add("active");
 }
 
 const addCat = (e, api, popupList, store) => {
     e.preventDefault();
-    let body = {}; // {name: "Vasya", id: 1, ...}
+    let body = {};
     for (let i = 0; i < e.target.elements.length; i++) {
         let el = e.target.elements[i];
         // console.log(el);
@@ -65,6 +60,5 @@ const addCat = (e, api, popupList, store) => {
                 e.target.reset();
                 document.querySelector(".popup-wrapper").classList.remove("active");
             }
-            // showPopup(popupList, "info", data.message);
         })
 }

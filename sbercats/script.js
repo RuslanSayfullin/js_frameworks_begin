@@ -3,7 +3,7 @@ import Api from "./api.js"; // ./ - указатель на текущую па�
 let user = document.cookie;
 console.log("u", user);
 if (!user) {
-    user = prompt("Пользователь не найден, укажите имя пользователя", "lekso4ka");
+    user = prompt("Пользователь не найден, укажите имя пользователя", "cryptolis");
     document.cookie = `user=${user}`;
 } else {
     user = user.split("=")[1];
@@ -11,7 +11,6 @@ if (!user) {
 
 const api = new Api(user);
 
-// "user=lekso4ka;goods=apple,orange,pinapple;date=2022-10-11"
 
 const container = document.querySelector(".container");
 const btn = document.querySelector(".dashboard").firstElementChild;
