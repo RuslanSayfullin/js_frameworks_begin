@@ -1,5 +1,5 @@
 """Пароли для системы, внесены в gitignore"""
-secret_key = 'django-insecure-5*ld8q5j@vjg7xdpjrq9+u^*(^o@^4&6*_zuul55*il7m5)&0r'   # секретный ключ приложения
+secret_key = 'django-insecure-26w#-h7$d@obw2g^r%&!$6cs4s+3^strd^ky8-3wb90*lg8e_4'   # секретный ключ приложения
 dbase_psw = '12345'     # Пароль для подключения к БД
 
 # superuser
