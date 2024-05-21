@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My First React Application</title>
-        <script src="//unpkg.com/react@18/umd/react.development.js"></script>
-        <script src="//unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-        </script>
+        <meta charset="utf-8" />
+        <title>React Examples</title>
     </head>
     <body>
         <div id="root"></div>
-        <script type="text/javascript">
-            const reactElement = React.createElement(
-                'h1',
-                null,
-                'Hello world!!!'
-            );
-            const domNode = document.getElementById('root');
-            const root = ReactDOM.createRoot(domNode);
-            root.render(reactElement);
+        <!—- Библиотеки React и React DOM -->
+        <script
+        src="https://unpkg.com/react@16.8.6/umd/react.development.js">
+        </script>
+        <script
+        src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js">
+        </script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js">
+        </script>
+        <script type="text/babel">
+        // Здесь размещается код JSX или ссылка на отдельный файл JavaScript,
+        // содержащий код JSX
         </script>
     </body>
 </html>
